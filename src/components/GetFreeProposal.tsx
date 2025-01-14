@@ -30,12 +30,14 @@ const GetFreeProposal = () => {
       }}
     >
       <div
-        style={{
-          flex: 1.5,
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
+        // style={{
+        //   flex: 1.5,
+        //   display: "flex",
+        //   justifyContent: "center",
+        //   alignItems: "center",
+        // }}
+
+        className=" hidden lg:flex flex-[1.5] justify-center items-center"
       >
         <img
           src="/proposalImage.JPG"
