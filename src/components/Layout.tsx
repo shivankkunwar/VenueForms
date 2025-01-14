@@ -55,7 +55,7 @@ export default function Layout({
           </div>
         </div>
       </div>
-      <div className=" flex-1 max-h-[100vh] bg-white">
+      <div className=" hidden sm:flex sm:flex-1 max-h-[100vh] bg-white">
       <div className="w-full p-8 flex items-center justify-center h-[90%] ">
         <motion.div
           initial={{ x: 100, opacity: 0 }}

@@ -9,11 +9,12 @@ export default function RecommendedVenues() {
     const sendDataToBackend = async () => {
       try {
         const userData = {
+          name: localStorage.getItem('userName'),
+          email: localStorage.getItem('userEmail'),
           guestCount: localStorage.getItem('guestCount'),
           selectedVenues: JSON.parse(localStorage.getItem('selectedVenues') || '[]')
         }
-
-        const response = await fetch('http://localhost:5000/api/user-preferences', {
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/api/user-preferences`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

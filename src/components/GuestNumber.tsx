@@ -32,6 +32,7 @@ export default function GuestCount() {
     setSelectedRange(range)
     localStorage.setItem('guestCount', range)
     setShouldNavigate(true)
+    // Reset the back navigation state
     navigate('.', { replace: true, state: {} })
   }
 
